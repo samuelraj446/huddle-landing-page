@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+color {
+    color:hsl(257, 40%, 49%) ;
+    color: hsl(300, 69%, 71%);
+}
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("https://res.cloudinary.com/dz7rcxumc/image/upload/v1679980321/bg-desktop_lwsyry.svg");
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+.img1{
+    /* width: 57vw; */
+    width: 50vw;
+}
+
+
+aside {
+    /* width: 22vw; */
+    margin-left: 50px;
+    /* line-height: 44px; */
+    margin-top: 41px;
+}
+h1{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    line-height: 50px;
+    width: 22vw;
+    font-weight: 600;
+}
+p{
+    color:hsl(300, 6%, 84%);
+    font-family:'Open Sans', sans-serif; 
+    font-weight: 400;
+    width: 30vw;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.button {
+    height: 5vh;
+    width: 11vw;
+    border-radius: 15px;
+    border-style: none;
+    color: hsl(257, 40%, 49%);
+}
+.icon {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+}
+.fb{
+    border: 2px solid white;
+    height: 32px;
+    width: 24px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+header{
+    margin: 20px;
+}
+.logo {
+    width: 20vh;
+}
+
+
+/* Mobile devices */
+@media screen and (max-width:768px) {
+    body{
+        background-image: url("https://res.cloudinary.com/dz7rcxumc/image/upload/v1679980355/bg-mobile_gtarwo.svg");
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .img1 {
+        width: 70vw;
+    }
+    aside{
+        margin-top: 20px;
+        /* align-items: center; */
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    h1{
+        width: 42vh;
+        text-align: center;
+        line-height: 35px;
+    }
+
+    
+    p{
+        width: 70vw;
+        text-align: center;
+        font-size: 13px;
+    }
+    
+    
+
+    
+    .button{
+        width: 30vw;
+
+    }
+
+    .icon{
+        margin: 40px;
+        display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+    }
+    
+}
